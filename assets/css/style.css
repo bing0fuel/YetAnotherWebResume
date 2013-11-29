@@ -3,5 +3,48 @@
  */
 .page-header h3 {
     color: #999;
-    margin-top: 10px;
+    margin-top: 0.2em;
+}
+
+pre.right-detail {
+    display: inline;
+    padding: 0.2em;
+    font-size: 0.80em;
+}
+
+/**
+ * Section
+ */
+span.glyphicon {
+    font-size: 0.85em;
+}
+
+div.content {
+    margin-bottom: 30px;
+}
+
+div.content div.description {
+    margin-bottom: 0.5em;
+}
+
+#skills code {
+    background-color: #eaf2f9;
+    color: #428bca;
+    margin-right: 8px;
+}
+
+#skills code.ultra{
+    font-size: 1.50em;
+}
+
+#skills code.high{
+    font-size: 1.25em;
+}
+
+#skills code.medium{
+    font-size: 1em;
+}
+
+#skills code.low{
+    font-size: 0.75em;
 }

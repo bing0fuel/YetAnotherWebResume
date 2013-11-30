@@ -7,7 +7,7 @@ as it is accessed via http(s):// and not file://, it should work almost
 anywhere.
 
 ### Here's what it looks like
-![](https://raw.github.com/suw/YetAnotherWebResume/blob/master/assets/img/screenshot.png)
+![](https://raw.github.com/suw/YetAnotherWebResume/master/assets/img/screenshot.png)
 
 ## How to install/setup
 1. Clone or fork (then clone) this repo.

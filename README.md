@@ -14,9 +14,7 @@ anywhere.
 1. Navigate to the repo directory
 1. Fire up your favorite light-weight web server. My preference is the built-in
    PHP one: `php -S localhost:8080`. Then navigate to `http://localhost:8080`.
-   A sample version should be displaying. You may need to change
-   `<base href="/" />` in index.html if you're hosting it inside of another
-   directory.
+   A sample version should be displaying.
 1. To start modifying, point your editor to `ROOT/app/app.js`
 1. Check out the Page variable, which is essentially a giant JSON with all of
    the data that YAWR needs to display itself.

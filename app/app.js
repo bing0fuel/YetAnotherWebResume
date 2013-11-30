@@ -1,10 +1,10 @@
 'use strict';
 
-/** Boring Plain Web Resume **/
+/** Resume App **/
 
-var bpwr = angular.module('bpwrApp', []);
+var resumeApp = angular.module('resumeApp', []);
 
-bpwr.controller('ResumeController', ['$scope',
+resumeApp.controller('ResumeController', ['$scope',
     function($scope) {
 
         /* Configure your information here */

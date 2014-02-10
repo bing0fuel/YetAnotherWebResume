@@ -1,10 +1,7 @@
 # Yet Another Web Resume (YAWR) 
 
-A (hopefully) dead simple to configure web resume written in AngularJS. The
-primary goal of this app was to be able to display the resume in any modern
-browser without needing to set up any database or heavy web server. As long
-as it is accessed via http(s):// and not file://, it should work almost
-anywhere.
+A (hopefully) dead simple way to create a web resume that doesn't look like it is
+from the 90s. Powered by Angular JS and Bootstrap.
 
 ### Here's what it looks like
 ![](https://raw.github.com/suw/YetAnotherWebResume/master/assets/img/screenshot.png)
@@ -21,7 +18,7 @@ anywhere.
 1. Modify the blocks as needed. Currently, there are no docs to indicate which
    fields and/blocks are required. You'll need to do some experimentation.
 1. Push to your hosting service. GitHub pages/GitHub.io is always a good
-   choice.
+   choice. (See [pages.github](http://pages.github.com/) for more details)
 
 ## License
 

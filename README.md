@@ -5,6 +5,7 @@ from the 90s. Powered by Angular JS and Bootstrap.
 
 ### Here's what it looks like
 ![](https://raw.github.com/suw/YetAnotherWebResume/master/assets/img/screenshot.png)
+_See a live sample [here](http://suwdo.com/YetAnotherWebResume/)_
 
 ## How to install/setup
 1. Clone or fork (then clone) this repo.

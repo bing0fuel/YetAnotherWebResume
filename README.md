@@ -21,6 +21,11 @@ _See a live sample [here](http://suwdo.com/YetAnotherWebResume/)_
 1. Push to your hosting service. GitHub pages/GitHub.io is always a good
    choice. (See [pages.github](http://pages.github.com/) for more details)
 
+## Todo
+1. Documentation on how to modify
+2. Interactive data generator
+3. Load existing data into data generator for modification
+
 ## License
 
 This project is licensed under GPL, version 3.0. Please see [LICENSE](LICENSE) for details.

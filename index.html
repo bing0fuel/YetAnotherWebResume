@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html ng-app="resumeApp" ng-controller="ResumeController">
+<html data-ng-app="resumeApp" data-ng-controller="ResumeController">
 <head>
   <title>YetAnotherWebResume</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -18,73 +18,126 @@
   <div class="container">
 
     <!-- Header -->
-    <div class="page-header">
-      <h1>{{Page.name}}</h1>
-      <h3>{{Page.subtitle}}</h3>
+    <div class="row">
+      <div class="col-md-12">
+        <div class="page-header">
+          <h1>{{Page.name}}</h1>
+          <h3>{{Page.subtitle}}</h3>
+        </div>
+      </div>
     </div>
 
     <!-- Summary -->
-    <div class="content">
-      <div class="lead">{{Page.summary}}</div>
+    <div class="row">
+      <div class="col-md-12">
+        <div class="content">
+          <div class="lead">{{Page.summary}}</div>
+        </div>
+      </div>
     </div>
 
     <!-- Work Experience -->
-    <h3><span class="section-icon glyphicon glyphicon-briefcase"></span> Experience</h3>
-    <div class="content list-content" id="experience">
-      <div ng-repeat="work in Page.experience">
-        <h4 class="pull-left">{{work.company}} <small>{{work.location}}</small></h4>
-        <div class="pull-right">
-          <pre class="right-detail">{{work.title}}</pre>
-          <pre class="right-detail">{{work.dates}}</pre>
+    <div class="row">
+      <div class="col-md-12">
+
+        <h3><span class="section-icon glyphicon glyphicon-briefcase"></span> Experience</h3>
+        <div class="content list-content" id="experience">
+          <div class="row" data-ng-repeat="work in Page.experience">
+            <div class="col-md-8">
+              <h4>{{work.company}} <small>{{work.location}}</small></h4>
+            </div>
+            <div class="col-md-4">
+              <div class="pull-right">
+                <pre class="right-detail">{{work.title}}</pre>
+                <pre class="right-detail">{{work.dates}}</pre>
+              </div>
+            </div>
+            <div class="col-md-12">
+              <div class="clearfix"><!-- --></div>
+              <div class="description">{{work.description}}</div>
+              <ul>
+                <li data-ng-repeat="detail in work.details">{{detail.text}}</li>
+              </ul>
+            </div>
+          </div>
+
         </div>
-        <div class="clearfix"><!-- --></div>
-        <div class="description">{{work.description}}</div>
-        <ul>
-          <li ng-repeat="detail in work.details">{{detail.text}}</li>
-        </ul>
       </div>
     </div>
 
     <!-- Projects -->
-    <h3><span class="section-icon glyphicon glyphicon-hdd"></span> Recent Projects</h3>
-    <div class="content list-content" id="projects">
-      <div class="content-block" ng-repeat="project in Page.projects">
-        <h4 class="pull-left">{{project.title}} <small>{{project.tech}}</small></h4>
-        <div class="pull-right">
-          <pre class="right-detail">{{project.role}}</pre>
-          <pre class="right-detail">{{project.dates}}</pre>
+    <div class="row">
+      <div class="col-md-12">
+
+        <h3><span class="section-icon glyphicon glyphicon-hdd"></span> Recent Projects</h3>
+        <div class="content list-content" id="projects">
+          <div class="row" data-ng-repeat="project in Page.projects">
+            <div class="col-md-8">
+              <h4 class="pull-left">{{project.title}} <small>{{project.tech}}</small></h4>
+            </div>
+            <div class="col-md-4">
+              <div class="pull-right">
+                <pre class="right-detail">{{project.role}}</pre>
+                <pre class="right-detail">{{project.dates}}</pre>
+              </div>
+            </div>
+            <div class="col-md-12">
+              <div class="clearfix"><!-- --></div>
+              <div class="description">{{project.description}}</div>
+            </div>
+          </div>
         </div>
-        <div class="clearfix"><!-- --></div>
-        <div class="description">{{project.description}}</div>
+
       </div>
     </div>
 
     <!-- Education -->
-    <h3><span class="section-icon glyphicon glyphicon-book"></span> Education</h3>
-    <div class="content list-content" id="education">
-      <div class="content-block" ng-repeat="place in Page.education">
-        <h4 class="pull-left">{{place.name}} <small>{{place.degree}}</small></h4>
-        <div class="pull-right">
-          <pre class="right-detail">{{place.type}}</pre>
-          <pre class="right-detail">{{place.dates}}</pre>
+    <div class="row">
+      <div class="col-md-12">
+
+        <h3><span class="section-icon glyphicon glyphicon-book"></span> Education</h3>
+        <div class="content list-content" id="education">
+          <div class="row" data-ng-repeat="place in Page.education">
+            <div class="col-md-8">
+              <h4 class="pull-left">{{place.name}} <small>{{place.degree}}</small></h4>
+            </div>
+            <div class="col-md-4">
+              <div class="pull-right">
+                <pre class="right-detail">{{place.type}}</pre>
+                <pre class="right-detail">{{place.dates}}</pre>
+              </div>
+            </div>
+            <div class="clearfix"><!-- --></div>
+          </div>
         </div>
-        <div class="clearfix"><!-- --></div>
+
       </div>
     </div>
 
     <!-- Skills -->
-    <h3><span class="section icon glyphicon glyphicon-inbox"></span> Skills</h3>
-    <div class="content" id="skills">
-      <code ng-repeat="skill in Page.skills | orderBy:'text'" class="{{skill.level}}">{{skill.text}}</code>
+    <div class="row">
+      <div class="col-md-12">
+
+        <h3><span class="section icon glyphicon glyphicon-inbox"></span> Skills</h3>
+        <div class="content" id="skills">
+          <code data-ng-repeat="skill in Page.skills | orderBy:'text'" class="{{skill.level}}">{{skill.text}}</code>
+        </div>
+
+      </div>
     </div>
 
     <!-- Contact info -->
-    <h3><span class="section-icon glyphicon glyphicon-user"></span> Contact</h3>
-    <div class="content" id="contact">
-      <span ng-repeat="contact in Page.contact track by $index">
-        <a href="{{contact.link}}">{{contact.name}}</a>
-        <span ng-show="{{$index}} != {{Page.contact.length - 1}}"> /</span>
-      </span>
+    <div class="row">
+      <div class="col-md-12">
+        <h3><span class="section-icon glyphicon glyphicon-user"></span> Contact</h3>
+        <div class="content" id="contact">
+          <span data-ng-repeat="contact in Page.contact track by $index">
+            <a href="{{contact.link}}">{{contact.name}}</a>
+            <span data-ng-show="{{$index}} != {{Page.contact.length - 1}}"> /</span>
+          </span>
+        </div>
+
+      </div>
     </div>
 
   </div>

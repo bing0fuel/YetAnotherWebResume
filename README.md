@@ -3,8 +3,7 @@
 A (hopefully) dead simple way to create a web resume that doesn't look like it is
 from the 90s. Powered by Angular JS and Bootstrap.
 
-### Here's what it looks like
-![](https://raw.github.com/suw/YetAnotherWebResume/master/assets/img/screenshot.png)
+See [an example here](http://bing0fuel.github.com/YetAnotherWebResume)
 
 ## How to install/setup
 1. Clone or fork (then clone) this repo.
